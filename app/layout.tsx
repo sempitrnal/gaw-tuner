@@ -13,14 +13,63 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GawTuner – Professional Guitar Tuner",
-  description: "Real-time web-based guitar tuner with pitch detection",
+  title: {
+    default: "gaw tuner",
+    template: "%s | gaw tuner",
+  },
+  description: "tuner para sa mga gaws",
+  keywords: [
+    "guitar tuner",
+    "online guitar tuner",
+    "chromatic tuner",
+    "pitch detection",
+    "web audio tuner",
+    "drop D tuner",
+    "drop C tuner",
+    "open G tuner",
+    "acoustic guitar tuner",
+    "electric guitar tuner",
+  ],
+  applicationName: "gaw tuner",
+  authors: [{ name: "sempitrnal" }],
+  creator: "bo",
+  metadataBase: new URL("https://gaw-tuner.vercel.app"),
   manifest: "/manifest.json",
   themeColor: "#09090b",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "gaw tuner",
+    description:
+      "Free online guitar tuner with real-time pitch detection. Works offline, supports 6+ tunings.",
+    url: "/",
+    siteName: "gaw tuner",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "gaw tuner",
+    description: "tuner para sa mga gaws",
+    creator: "@bo",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "GawTuner",
+    title: "gaw tuner",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
@@ -42,7 +91,7 @@ export default function RootLayout({
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
-        <meta name="apple-mobile-web-app-title" content="GawTuner" />
+        <meta name="apple-mobile-web-app-title" content="gaw tuner" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
