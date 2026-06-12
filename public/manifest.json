@@ -1,0 +1,19 @@
+{
+  "name": "GawTuner",
+  "short_name": "GawTuner",
+  "description": "Real-time web-based guitar tuner with pitch detection",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
